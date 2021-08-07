@@ -12,6 +12,29 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     font-weight: 400;
 }
 
+.btn {
+    padding: 14px 50px;
+}
+
+.btn-primary {
+    background: #43C45F;
+    border-color: #43C45F;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background: #40bd5b;
+    border-color: #40bd5b;
+}
+
 /* ======================================
 NAVIGACIJOS STILIAI
 ====================================== */
@@ -83,7 +106,45 @@ PRADINIO PUSLAPIO STILIAI
 
 /* HEADER STILIAI */
 
+.home-page header {
+    height: calc(100vh - 80px);
+    background: linear-gradient(rgba(98, 100, 113, 0.5), rgba(98, 100, 113, 0.5)), 
+        url('../images/header-sumazinta.jpg') top center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
 
+.home-page header .container,
+.home-page header .container .row {
+    height: 100%;
+}
+
+.home-page header h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 82px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .home-page header h1 {
+        font-size: 54px;
+        line-height: 63px;
+    }
+}
+
+.home-page header p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #D5D7D8;
+    max-width: 681px;
+    width: 100%;
+    margin: 33px auto 49px;
+}
 
 /* ... STILIAI */
 
