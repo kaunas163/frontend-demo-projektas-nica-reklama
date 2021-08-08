@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     border-color: #40bd5b;
 }
 
+.page-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    /* padding: 112px 0; */
+}
+
 /* ======================================
 NAVIGACIJOS STILIAI
 ====================================== */
@@ -146,9 +152,51 @@ PRADINIO PUSLAPIO STILIAI
     margin: 33px auto 49px;
 }
 
-/* ... STILIAI */
+/* GENERAL INFORMATION STILIAI */
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .general-information .text-information-col .information-block {
+        margin-bottom: 52px;
+    }
+}
 
+@media only screen and (min-width: 992px) {
+    .general-information .text-information-col .information-block:nth-child(-n+2) {
+        margin-bottom: 52px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .general-information .text-information-col .information-block {
+        margin-bottom: 49px;
+        text-align: center;
+    }
+}
+
+.general-information .text-information-col .information-block .icon {
+    color: #49C0FC;
+    font-size: 38px;
+}
+
+.general-information .text-information-col .information-block h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #404445;
+    margin: 18px 0 10px;
+}
+
+.general-information .text-information-col .information-block p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5F6B81;
+    margin-bottom: 0;
+}
+
+.general-information .photo-col {}
 
 /* ======================================
 ...
