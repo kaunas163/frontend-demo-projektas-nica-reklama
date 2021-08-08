@@ -12,6 +12,37 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     font-weight: 400;
 }
 
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #404445;
+}
+
+h2.white {
+    color: white;
+}
+
+@media only screen and (max-width: 575px) {
+    h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+p.sub-heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5F6B81;
+}
+
+p.sub-heading.white {
+    color: white;
+}
+
 .btn {
     padding: 14px 50px;
 }
@@ -35,10 +66,42 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     border-color: #40bd5b;
 }
 
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ======================================
+SKILČIŲ BENDRI STILIAI
+====================================== */
+
 .page-section {
     padding-top: 112px;
     padding-bottom: 112px;
     /* padding: 112px 0; */
+}
+
+.page-section .page-section-header-row {
+    text-align: center;
+}
+
+.page-section .page-section-header-row h2 {
+    margin-bottom: 25px;
+}
+
+.page-section .page-section-header-row p.sub-heading {
+    width: 100%;
+    max-width: 648px;
+    margin: 0 auto;
 }
 
 /* ======================================
@@ -155,30 +218,30 @@ PRADINIO PUSLAPIO STILIAI
 /* GENERAL INFORMATION STILIAI */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .general-information .text-information-col .information-block {
+    .home-page .general-information .text-information-col .information-block {
         margin-bottom: 52px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .general-information .text-information-col .information-block:nth-child(-n+2) {
+    .home-page .general-information .text-information-col .information-block:nth-child(-n+2) {
         margin-bottom: 52px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .general-information .text-information-col .information-block {
+    .home-page .general-information .text-information-col .information-block {
         margin-bottom: 49px;
         text-align: center;
     }
 }
 
-.general-information .text-information-col .information-block .icon {
+.home-page .general-information .text-information-col .information-block .icon {
     color: #49C0FC;
     font-size: 38px;
 }
 
-.general-information .text-information-col .information-block h3 {
+.home-page .general-information .text-information-col .information-block h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -187,7 +250,7 @@ PRADINIO PUSLAPIO STILIAI
     margin: 18px 0 10px;
 }
 
-.general-information .text-information-col .information-block p {
+.home-page .general-information .text-information-col .information-block p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -196,7 +259,17 @@ PRADINIO PUSLAPIO STILIAI
     margin-bottom: 0;
 }
 
-.general-information .photo-col {}
+.home-page .general-information .photo-col {}
+
+/* VIDEO SECTION STILIAI */
+
+.home-page .video-section {
+    background: #F1F8FF;
+}
+
+.home-page .video-section .video-col {
+    margin-top: 54px;
+}
 
 /* ======================================
 ...
